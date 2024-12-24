@@ -37,7 +37,7 @@ locals {
       {
         ## Define defaults for these, if they exist in the account metadata json file then it'll get overwritten
         ## This assumes that name is always provided, as it should be!
-        "email"             = format("IT-AWS-%s@stifel.com", jsondecode(file(format("%s/%s", local.structure_prefix, acct))).name)
+        "email"             = format("IT-AWS-%s@squirrel.fake", jsondecode(file(format("%s/%s", local.structure_prefix, acct))).name)
         "alias"             = format("%s-%s", "squirrel", jsondecode(file(format("%s/%s", local.structure_prefix, acct))).name)
         "vpc_name"          = format("%s_vpc", jsondecode(file(format("%s/%s", local.structure_prefix, acct))).name)
         "parent_path"       = format("/%s", dirname(acct))

@@ -6,7 +6,7 @@ This can be used to pull following information about your Org:
 - Placement of OU Policies (both SCP and TAG)
 - OU Placements in the structure
 - Account Placement in the strucuture within OU (if ou.txt file is not created properly, then the account/OU will go under Root)
-- Account Alias to Account Name lookup. If you got Account alias, you can lookup what the Name is. Typically the alias is just "stifel-ACCOUNTNAME"
+- Account Alias to Account Name lookup. If you got Account alias, you can lookup what the Name is. 
 - Account Attributes
 
 ## Updating the Structure
