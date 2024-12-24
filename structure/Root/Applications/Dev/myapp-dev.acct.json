@@ -1,0 +1,64 @@
+{
+    "name": "myapp-dev",
+    "email": "squirrel-myapp-dev@squirrel.fake",
+    "alias": "squirrel-myapp-dev",
+    "close_on_deletion": "false",
+    "account_group": "myapp",
+    "account_type": "application",
+    "account_subtype": "dev",
+    "account_env": "dev",
+    "application_name": "myapp",
+    "application_type": "backend",
+    "this_region": "us-east-1",
+    "vpc_enable": "true",
+    "vpc_cidr": "10.10.40.0/24",
+    "primary_cidr_settings": [
+      2,
+      1,
+      2
+    ],
+    "public_subnet_enable": "true",
+    "public_route_type": "transit",
+    "tgw_enable": "true",
+    "vgw_create": "true",
+    "propagating_vgw": "false",
+    "igw_create": "false",
+    "dns_resolver": "aws_only",
+    "endpoints": [
+      "s3",
+      "logs"
+    ],
+    "wafv2_enable": "false",
+    "wafv2_ip_set_addresses": [
+      ""
+    ],
+    "api_gateway_domains": [],
+    "endpoint_private_dns_on": false,
+    "account_subzones_enable": "false",
+    "iam_role_list": [],
+    "alternate_contacts": {
+      "BILLING": {
+        "email": "squirrel@squirrel.fake",
+        "name": "Tree Climber",
+        "phone": "8675309",
+        "title": "Nut Hider"
+      }
+    },
+    "sso_groups": [
+        {
+            "group": "myapp-limitedadmin",
+            "permission_sets": [
+                "LimitedAdmin"
+            ]
+        },
+        {
+            "group": "myapp-readonly",
+            "permission_sets": [
+                "ReadOnly"
+            ]
+        }
+    ],
+    "tags": {
+      "DeleteProtected": "true"
+    }
+  }

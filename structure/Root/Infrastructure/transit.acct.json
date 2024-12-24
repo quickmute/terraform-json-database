@@ -1,0 +1,58 @@
+{
+    "name": "transit",
+    "email": "squirrel-transit@squirrel.fake",
+    "alias": "squirrel-transit",
+    "close_on_deletion": "false",
+    "account_group": "transit",
+    "account_type": "infrastructure",
+    "account_subtype": "transit",
+    "account_env": "poc",
+    "application_name": "shared",
+    "application_type": "core",
+    "this_region": "us-east-1",
+    "vpc_enable": "true",
+    "vpc_cidr": "10.10.30.0/24",
+    "primary_cidr_settings": [
+      2,
+      1,
+      2
+    ],
+    "public_subnet_enable": "true",
+    "public_route_type": "transit",
+    "tgw_enable": "true",
+    "vgw_create": "true",
+    "propagating_vgw": "false",
+    "igw_create": "false",
+    "dns_resolver": "aws_only",
+    "endpoints": [
+      "s3",
+      "logs"
+    ],
+    "wafv2_enable": "false",
+    "wafv2_ip_set_addresses": [
+      ""
+    ],
+    "api_gateway_domains": [],
+    "endpoint_private_dns_on": false,
+    "account_subzones_enable": "false",
+    "iam_role_list": [],
+    "alternate_contacts": {
+      "BILLING": {
+        "email": "squirrel@squirrel.fake",
+        "name": "Tree Climber",
+        "phone": "8675309",
+        "title": "Nut Hider"
+      }
+    },
+    "sso_groups": [
+        {
+            "group": "transit-limitedadmin",
+            "permission_sets": [
+                "LimitedAdmin"
+            ]
+        }
+    ],
+    "tags": {
+      "DeleteProtected": "true"
+    }
+  }

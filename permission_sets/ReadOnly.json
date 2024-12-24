@@ -1,0 +1,31 @@
+{
+    "name": "ReadOnly",
+    "description": "Uses managed policy ReadOnlyAccess.",
+    "session_duration": "PT4H",
+    "managed_policy_arns": [
+        "arn:aws:iam::aws:policy/ReadOnlyAccess",
+        "arn:aws:iam::aws:policy/AWSSupportAccess"
+    ],
+    "inline_policy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "DenyActions",
+                "Effect": "Deny",
+                "Action": [
+                    "kms:Decrypt"
+                ],
+                "Resource": "*"
+            },            
+            {
+                "Sid": "LogListAnomalies",
+                "Effect": "Allow",
+                "Action": [
+                    "logs:ListAnomalies"
+                ],
+                "Resource": "*"
+            }
+        ]
+    
+    }
+}
